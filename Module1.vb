@@ -2,7 +2,7 @@
 'RCET0265
 'Spring 2021
 'Multiplication Table
-'
+'https://github.com/TaylorHerndon/MultiplicationTable
 
 Imports System.Threading
 Module Module1
@@ -15,9 +15,10 @@ Module Module1
         Dim IndexString As String = ""
         Dim Total As Integer = 0
 
-        Console.WriteLine("[Enter a number you want to make a table of.]")
-
+        'Get the bounds of the multiplication table.
         Do Until Bounds <> Nothing
+
+            Console.WriteLine("[Enter a number you want to make a table of.]")
 
             Try
 
@@ -28,10 +29,6 @@ Module Module1
                 Bounds = Nothing
 
                 Console.Clear()
-                Console.WriteLine("No, no, no that wont work...")
-                Thread.Sleep(2000)
-                Console.WriteLine("Just a single number, that's all.")
-                Thread.Sleep(2000)
 
             End Try
 
@@ -39,10 +36,13 @@ Module Module1
 
         Console.Clear()
 
+        'Writes out the multiplication table
+
         For Index = 1 To Bounds
 
             For Index2 = 1 To Bounds
 
+                'Value = Row x Column
                 Total = Index * Index2
 
                 IndexString = String.Format(Total)
