@@ -1,4 +1,7 @@
-﻿'Taylor Herndon
+﻿Option Strict On
+Option Explicit On
+
+'Taylor Herndon
 'RCET0265
 'Spring 2021
 'Multiplication Table
@@ -22,7 +25,7 @@ Module Module1
 
             Try
 
-                Bounds = Console.ReadLine()
+                Bounds = Convert.ToInt32(Console.ReadLine())
 
             Catch
 
@@ -45,7 +48,7 @@ Module Module1
                 'Value = Row x Column
                 Total = Index * Index2
 
-                IndexString = String.Format(Total)
+                IndexString = Convert.ToString(Total)
                 Console.Write(IndexString.PadLeft(5))
 
             Next
