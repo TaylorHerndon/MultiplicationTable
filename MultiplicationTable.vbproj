@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CB84E6E6-5E8C-421F-A696-0D61FDAF4EBA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>MultiplicationTable.Module1</StartupObject>
+    <StartupObject>MultiplicationTable.MultiplicationTable</StartupObject>
     <RootNamespace>MultiplicationTable</RootNamespace>
     <AssemblyName>MultiplicationTable</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="MultiplicationTable.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
